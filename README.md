@@ -1,59 +1,103 @@
-# AppSpa
+# 🌐 Projeto Angular 19 - Aplicação Institucional
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.15.
+Este projeto é uma **aplicação institucional em Angular 19**, desenvolvida como um SPA (Single Page Application), utilizando **componentes standalone**, **rotas protegidas**, **formulário reativo**, **consumo de dados com service**, **carrossel de imagens** e **rodapé global**.
 
-## Development server
+---
 
-To start a local development server, run:
+## 🚀 Funcionalidades
+
+- ✅ Navegação SPA entre páginas (Home, Sobre, Serviços, Contato)
+- ✅ Componentes standalone com rotas configuradas
+- ✅ Menu fixo e rodapé global
+- ✅ Página inicial com **cards de produtos dinâmicos**
+- ✅ Página "Sobre" com **carrossel de imagens automático**
+- ✅ Página de login com autenticação simples (`adm/123`)
+- ✅ **Rota protegida** com AuthGuard (Painel de Controle)
+- ✅ Página de contato com **formulário reativo e validação**
+- ✅ Layout responsivo com CSS externo e estrutura organizada
+
+---
+
+## 📁 Estrutura de Pastas
+
+src/
+├── app/
+│ ├── home/
+│ ├── sobre/
+│ ├── servicos/
+│ ├── contato/
+│ ├── painel/
+│ ├── painel-controle/
+│ ├── rodape/
+│ ├── services/
+│ └── guards/
+├── public/
+│ └── img/
+│ ├── whey.jpg
+│ ├── creatina.jpg
+│ ├── vitamina.jpg
+└── app.routes.ts
+
+
+---
+
+## 🧠 Tecnologias Utilizadas
+
+- [Angular 19](https://angular.io/)
+- TypeScript
+- HTML5 e CSS3 (modularizados por componente)
+- Reactive Forms (formulário reativo)
+- Angular Router
+- Standalone Components
+- Flexbox para layout
+
+---
+
+## 🔐 Acesso Restrito (Login)
+
+- **Usuário:** `adm`
+- **Senha:** `123`
+- Após o login, o usuário é redirecionado para a rota `/painel-controle`.
+
+---
+
+## ✨ Como Executar o Projeto
 
 ```bash
+# 1. Clonar o repositório
+git clone https://github.com/SeuUsuario/seu-repositorio.git
+
+# 2. Acessar a pasta do projeto
+cd seu-repositorio
+
+# 3. Instalar as dependências
+npm install
+
+# 4. Rodar a aplicação
 ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+# 5. Acesse no navegador
+http://localhost:4200
 
-## Code scaffolding
+| Requisito                       | Status |
+| ------------------------------- | ------ |
+| Estrutura SPA com rotas         | ✅      |
+| Componentes Standalone          | ✅      |
+| Menu e Rodapé                   | ✅      |
+| Página Home com cards dinâmicos | ✅      |
+| Página Sobre com carrossel      | ✅      |
+| Autenticação e rota protegida   | ✅      |
+| Formulário de contato validado  | ✅      |
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+📌 Observações
+As imagens do carrossel estão localizadas em src/public/img/
 
-```bash
-ng generate component component-name
-```
+O projeto não utiliza backend, toda lógica de autenticação é feita em um AuthService
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Os dados dos produtos são fornecidos via ProdutosService
 
-```bash
-ng generate --help
-```
+📷 Screenshots
+(Adicione aqui imagens da interface do projeto se quiser)
 
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+👨‍💻 Autor
+Thiago de Assis
