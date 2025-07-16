@@ -18,29 +18,6 @@ Este projeto é uma **aplicação institucional em Angular 19**, desenvolvida co
 
 ---
 
-## 📁 Estrutura de Pastas
-
-src/
-├── app/
-│ ├── home/
-│ ├── sobre/
-│ ├── servicos/
-│ ├── contato/
-│ ├── painel/
-│ ├── painel-controle/
-│ ├── rodape/
-│ ├── services/
-│ └── guards/
-├── public/
-│ └── img/
-│ ├── whey.jpg
-│ ├── creatina.jpg
-│ ├── vitamina.jpg
-└── app.routes.ts
-
-
----
-
 ## 🧠 Tecnologias Utilizadas
 
 - [Angular 19](https://angular.io/)
