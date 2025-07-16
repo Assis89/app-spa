@@ -1,0 +1,17 @@
+<h2 class="titulo">Área Administrativa</h2>
+
+<form [formGroup]="loginForm" (ngSubmit)="entrar()" class="caixa-login">
+  <label>
+    Usuário
+    <input type="text" formControlName="usuario" placeholder="Digite adm" />
+  </label>
+
+  <label>
+    Senha
+    <input type="password" formControlName="senha" placeholder="Digite 123" />
+  </label>
+
+  <button type="submit" [disabled]="loginForm.invalid">Entrar</button>
+
+  <p class="erro" *ngIf="erro">{{ erro }}</p>
+</form>

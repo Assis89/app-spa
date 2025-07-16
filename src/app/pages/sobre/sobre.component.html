@@ -1,0 +1,67 @@
+<div class="sobre">
+  <h1>Sobre a PowerNutri</h1>
+  
+  <section class="intro">
+    <h2>PowerNutri Suplementos – Energia que Transforma Vidas</h2>
+    <p>
+      Na PowerNutri Suplementos, acreditamos que saúde, desempenho e qualidade de vida caminham juntos. 
+      Nosso propósito é oferecer suplementos confiáveis, com procedência garantida e resultados reais, 
+      para apoiar você em cada fase da sua jornada de bem-estar.
+    </p>
+  </section>
+
+  <section class="produtos">
+    <h2>Nossos Produtos Principais</h2>
+    <div class="produto-item">
+      <h3>Whey Protein</h3>
+      <p>
+        Proteína de alto valor biológico, essencial para quem busca hipertrofia muscular, 
+        recuperação pós-treino e saciedade saudável no dia a dia.
+      </p>
+    </div>
+
+    <div class="produto-item">
+      <h3>Vitamina A</h3>
+      <p>
+        Fundamental para a saúde da visão, fortalecimento do sistema imunológico e 
+        regeneração da pele — ideal para quem busca equilíbrio nutricional e defesa natural do organismo.
+      </p>
+    </div>
+
+    <div class="produto-item">
+      <h3>Creatina</h3>
+      <p>
+        Suplemento cientificamente comprovado para o aumento de força, resistência e explosão muscular, 
+        sendo indispensável para atletas de alta performance e praticantes de atividades intensas.
+      </p>
+    </div>
+  </section>
+
+  <section class="diferenciais">
+    <h2>Nossos Diferenciais</h2>
+    <ul class="beneficios-lista">
+      <li>✅ Frete rápido para todo o Brasil</li>
+      <li>✅ Atendimento humano e atencioso</li>
+      <li>✅ Pagamento facilitado</li>
+      <li>✅ Descontos exclusivos e combos especiais</li>
+    </ul>
+  </section>
+
+  <section class="conclusao">
+    <p>
+      Seja você um atleta profissional ou alguém que busca mais energia e vitalidade no dia a dia, 
+      a PowerNutri está aqui para apoiar seus objetivos com responsabilidade, qualidade e compromisso.
+    </p>
+    <strong>PowerNutri Suplementos – Energia para o seu melhor desempenho.</strong>
+  </section>
+
+  <div class="carrossel">
+    <img [src]="imagemExibida" [alt]="'Imagem ' + (imagemAtual + 1) + ' de ' + imagens.length">
+    <div class="carrossel-controles">
+      <span class="indicador" *ngFor="let img of imagens; let i = index" 
+            [class.ativo]="i === imagemAtual">
+      </span>
+    </div>
+  </div>
+</div>
+

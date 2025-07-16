@@ -1,0 +1,21 @@
+.painel {
+  max-width: 600px;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+button {
+  margin-top: 2rem;
+  padding: .8rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background: #e53935;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .2s;
+}
+
+button:hover {
+  background: #c62828;
+}

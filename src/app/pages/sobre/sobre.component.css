@@ -1,0 +1,125 @@
+.sobre {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sobre section {
+  margin-bottom: 3rem;
+}
+
+.sobre h1 {
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.sobre h2 {
+  color: #444;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.sobre h3 {
+  color: #555;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.sobre p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.carrossel {
+  position: relative;
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+.carrossel img {
+  width: 100%;
+  height: 400px; /* altura fixa */
+  object-fit: cover; /* mantém proporção da imagem */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.carrossel img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.carrossel-controles {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.indicador {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+.indicador.ativo {
+  background: #fff;
+}
+
+.produto-item {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.beneficios-lista {
+  list-style: none;
+  padding: 0;
+}
+
+.beneficios-lista li {
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+}
+
+.conclusao {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 2rem 0;
+}
+
+.conclusao strong {
+  display: block;
+  margin-top: 1.5rem;
+  color: #2c3e50;
+}
+
+@media (max-width: 768px) {
+  .sobre {
+    padding: 1rem;
+  }
+
+  .sobre h1 {
+    font-size: 2rem;
+  }
+
+  .sobre h2 {
+    font-size: 1.5rem;
+  }
+
+  .carrossel img {
+    max-width: 100%;
+    height: 250px; /* altura menor para dispositivos móveis */
+  }
+}

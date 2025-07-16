@@ -1,0 +1,18 @@
+.rodape {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 16px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.rodape a {
+  color: #00acee;
+  text-decoration: none;
+}
+
+.rodape a:hover {
+  text-decoration: underline;
+}

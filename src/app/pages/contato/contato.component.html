@@ -1,0 +1,32 @@
+<div class="contato">
+  <h2>Fale Conosco</h2>
+  <form [formGroup]="contatoForm" (ngSubmit)="enviar()">
+
+    <!-- Campo Nome -->
+    <label for="nome">Nome:</label>
+    <input id="nome" formControlName="nome" type="text" />
+    <div class="erro" *ngIf="f['nome'].touched && f['nome'].invalid">
+      O nome é obrigatório.
+    </div>
+
+    <!-- Campo Email -->
+    <label for="email">Email:</label>
+    <input id="email" formControlName="email" type="email" />
+    <div class="erro" *ngIf="f['email'].touched && f['email'].invalid">
+      <div *ngIf="f['email'].errors?.['required']">O email é obrigatório.</div>
+      <div *ngIf="f['email'].errors?.['email']">Formato de email inválido.</div>
+    </div>
+
+    <!-- Campo Mensagem -->
+    <label for="mensagem">Mensagem:</label>
+    <textarea id="mensagem" formControlName="mensagem"></textarea>
+    <div class="erro" *ngIf="f['mensagem'].touched && f['mensagem'].invalid">
+      <div *ngIf="f['mensagem'].errors?.['required']">A mensagem é obrigatória.</div>
+      <div *ngIf="f['mensagem'].errors?.['minlength']">A mensagem deve ter no mínimo 10 caracteres.</div>
+    </div>
+
+    <!-- Botão Enviar -->
+    <button type="submit">Enviar</button>
+  </form>
+</div>
+

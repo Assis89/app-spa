@@ -1,0 +1,10 @@
+<!-- src/app/pages/home.component.html -->
+<h1 class="titulo-pagina">Produtos em Destaque</h1>
+
+<section class="grade-produtos">
+  <article class="card" *ngFor="let p of produtos">
+    <img [src]="p.foto" [alt]="p.rotulo">
+    <h3>{{ p.rotulo }}</h3>
+    <p>{{ p.detalhe }}</p>
+  </article>
+</section>
